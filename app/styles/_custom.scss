@@ -1,1 +1,66 @@
 // Your custom SCSS should be written here...
+
+// Variables
+
+  // Colors
+  $gray: #bdbdbd;
+  $dark-gray: darken($gray, 30%);
+  $green: #73b705;
+  $orange: #ff530f;
+  $lighter-orange: lighten($orange, 10%);
+  $white: #f1f1f1;
+
+// Styles
+  
+  // ##### Navbar ####
+  .logo {
+    font-size: $large;
+  }
+  
+  .navbar {
+    ul {
+      li {
+        height: 0; // lets ul element make their own height
+        
+        .btn {
+          border: none;
+        }
+
+        .btn:hover {
+          border: none;
+        }
+
+        .btn.default {
+          background: $orange;
+          color: $white;
+        }
+
+        .btn.default:hover {
+          background: $lighter-orange;
+        }
+
+        > a {
+          text-shadow: none; //overrides that god-awful text-shadow on navbar li links
+        }
+
+      }
+    }
+  }
+  
+  // #### Band 1: Hero Area ####
+
+  .hero-subimage-block {
+    background: $gray;
+    height: 400px;
+    margin-top: 50px;
+  }
+
+  .hero-mainimage-block {
+    background: $dark-gray;
+    height: 500px;
+  }
+
+  .white {
+    color: $white;
+  }
+
