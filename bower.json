@@ -2,6 +2,7 @@
   "name": "goodtruck.us",
   "version": "0.1.0",
   "dependencies": {
+  		"filementgroup-responsive-carousel": "https://github.com/filamentgroup/responsive-carousel/archive/master.zip"
   },
   "devDependencies": {}
 }

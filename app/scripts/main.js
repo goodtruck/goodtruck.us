@@ -3,7 +3,8 @@ require.config({
         gumby: 'libs/gumby.min',
         jquery: 'libs/jquery-1.9.1.min',
         plugins: 'plugins',
-        app: 'app'
+        app: 'app',
+        'filementgroup-responsive-carousel': 'app/components/filementgroup-responsive-carousel/Gruntfile'
     }
 });
 

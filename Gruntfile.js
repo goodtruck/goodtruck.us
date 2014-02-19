@@ -20,6 +20,8 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    grunt.loadNpmTasks('grunt-bower-install');
+
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
@@ -107,7 +109,7 @@ module.exports = function (grunt) {
         mocha: {
             all: {
                 options: {
-                    run: true,
+                    run: false,
                     urls: ['http://localhost:<%= connect.options.port %>/index.html']
                 }
             }
@@ -155,6 +157,22 @@ module.exports = function (grunt) {
         /*concat: {
             dist: {}
         },*/
+        'bower-install': {
+
+          target: {
+
+            // Point to the files that should be updated when
+            // you run `grunt bower-install`
+            src: ['app/index.html'],
+
+            // Optional:
+            // ---------
+            cwd: '',
+            ignorePath: '',
+            exclude: [],
+            fileTypes: {}
+          }
+        },     
         requirejs: {
             dist: {
                 // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
@@ -247,8 +265,9 @@ module.exports = function (grunt) {
             all: {
                 rjsConfig: '<%= yeoman.app %>/scripts/main.js'
             }
-        }
+        }           
     });
+
 
     grunt.renameTask('regarde', 'watch');
 
