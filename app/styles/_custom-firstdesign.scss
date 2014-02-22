@@ -1,0 +1,155 @@
+// Your custom SCSS should be written here...
+
+// Variables
+
+  // Colors
+  $gray: #767676;
+  $dark-gray: darken($gray, 30%);
+  $darker-gray: darken($gray, 50%);
+
+  $green: #73b705;
+  $orange: #ff530f;
+  $light-orange: lighten($orange, 10%);
+  $white: #f1f1f1;
+  $offwhite: #f7f7f2;
+  $darker-offwhite: darken($offwhite, 5%);
+
+// Styles
+  // ##### Navbar ####
+  body {
+    color: $gray;
+  }
+
+
+  // ##### Navbar ####
+  .logo {
+    font-size: $large;
+
+    .site-logo img {
+      padding: 0.25em 0.2em 0em 0em;
+      max-width: none;
+    }
+          
+    .site-title {
+      padding-left: 0.7em;
+      vertical-align: top;
+    }
+  }
+  
+  .no-touch .navbar {
+    background: $offwhite;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    ul {
+      li {
+        height: 0; // lets ul element make their own height
+        
+        .btn, .btn:hover {
+          border: none;
+        }
+
+        .btn.default {
+          background: $orange;
+          color: $offwhite;
+          margin: 0em .4em;
+        }
+
+        .btn.default:hover {
+          background: $light-orange;
+        }
+
+        > a, a:visited {
+          color: $gray;
+          padding: 0em 1em;
+          text-shadow: none; //overrides that god-awful text-shadow on navbar li links
+        }
+
+        > a:hover {
+          background: $darker-offwhite;
+          color: $orange;
+
+        }
+      }
+    }
+  }
+
+  // #### Band 1: Hero Mobile Area ####
+  .hero-background {
+    background: url('../images/food-truck-bg@2x.jpg') no-repeat center center;
+    height: 100%;
+    margin-top: 4em;
+    min-height: 37em;
+    min-width: 100%;
+
+    .hero-text-area-container {
+      float: left;
+      margin: 0% 6%;
+      min-height: 542px;
+      padding-top: 11em;
+      position: relative;
+      vertical-align: middle;
+      width: 55%;
+
+      h3 {
+        background: $offwhite;
+        opacity: .8;
+        padding: 1em;
+        text-align: center;
+      }
+    }
+
+    .iphone-backdrop {
+      float: left;
+      max-width: 320px;
+      padding-top: 2em;
+      position: relative;
+
+      img {
+        display: block;        
+      }
+  
+      .hero-image-band-container {
+        position: absolute;
+        top: 13%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+
+
+
+  // #### Generic ####
+  .white {
+    color: $white;
+  }
+
+  .primary-band {
+    background: none;
+
+    .row {
+      max-width: none; //override
+      width: 100%;      
+    }
+  }
+
+  .alternate-band {
+    background: $dark-gray;
+    display: inherit;
+    min-height: 400px;
+    padding-top: 40em;
+    width: 100%;
+
+    .row {
+      max-width: none; //override
+      width: 100%;
+    }
+  }
+}

@@ -15,6 +15,39 @@
        url('../fonts/icons/#{$icons}.ttf')  format('truetype');
 }
 
+// Display Face: Ostrich Sans Dark
+@font-face {
+  font-family: '#{$display-face}';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ostrich-sans-black/ostrich-black.eot);
+  src: url('../fonts/ostrich-sans-black/ostrich-black.eot?#iefix') format('ie9-skip-eot'),
+       url('../fonts/ostrich-sans-black/ostrich-black.woff') format('woff'),
+       url('../fonts/ostrich-sans-black/ostrich-black.ttf')  format('truetype');
+}
+
+// Main Type Face: Museo
+@font-face {
+  font-family: '#{$main-type-face}';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/museo-slab/Museo_Slab_500_2-webfont.eot);
+  src: url('../fonts/museo-slab/Museo_Slab_500_2-webfont.eot?#iefix') format('ie9-skip-eot'),
+       url('../fonts/museo-slab/Museo_Slab_500_2-webfont.woff') format('woff'),
+       url('../fonts/museo-slab/Museo_Slab_500_2-webfont.ttf')  format('truetype');
+}
+
+// Main Type Face, Italic: Museo Italic
+@font-face {
+  font-family: '#{$main-type-face-italic}';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/museo-slab-italic/Museo_Slab_500italic-webfont.eot);
+  src: url('../fonts/museo-slab-italic/Museo_Slab_500italic-webfont.eot?#iefix') format('ie9-skip-eot'),
+       url('../fonts/museo-slab-italic/Museo_Slab_500italic-webfont.woff') format('woff'),
+       url('../fonts/museo-slab-italic/Museo_Slab_500italic-webfont.ttf')  format('truetype');
+}
+
 // To include your own, local copies of fonts, use the following template
 //
 //@font-face {

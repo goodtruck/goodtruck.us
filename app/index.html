@@ -29,7 +29,7 @@
 
 	<!-- Google+ Metadata /-->
 	<meta itemprop="name" content="Goodtruck">
-	<meta itemprop="description" content="Goodtruck is bringing real-time fod truck locations to consumers.">
+	<meta itemprop="description" content="Goodtruck is bringing real-time food truck locations to consumers.">
 	<meta itemprop="image" content="images/goodtruck-logo.png">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -51,56 +51,104 @@
 
 <body>
 
-	<div class="modal" id="modal1">
-		<div class="content">
-			<a class="close switch" gumby-trigger="|#modal1"><i class="icon-cancel" /></i></a>
-			<div class="row">
-				<div class="ten columns centered center-text">
-					<h2>This is a modal.</h2>
-					<p>Gumby modals are easy to make using Toggles &amp; Switches. The <span class="label default">.modal</span> class already has the required styles which you can open and close using Toggles &amp; Switches.</p>
-
-					<p class="btn primary medium"><a href="#" class="switch" gumby-trigger="|#modal1">Close Modal</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	<!--Nav-->
   <div class="navbar" id="nav3">
-    <a class="toggle" gumby-trigger="#nav3 > .row > ul" href="#"><i class="icon-menu"></i></a>
+    <!--<a class="toggle" gumby-trigger="#nav3 > .row > ul" href="#"><i class="icon-menu"></i></a>-->
     <div class="row">
-      <div class="three columns">
-        <ul class="logo">
-          <li class="site-logo"><img src="images/goodtruck-logo-for-header-46x52px.png" width="58" height="46" alt="Goodtruck Logo in Header" /></li>
-          <li class="site-title">Goodtruck</li>
-        </ul>
-      </div>
-      <div class="push_two seven columns">
-        <ul>
-          <li><a href="#">Consumers</a></li>
-          <li><a href="#">Producers</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Awards</a></li>
-          <li><a href="#" class="medium metro rounded btn default">&nbsp;&nbsp;Register&nbsp;&nbsp;</a></li>
+      <div class="eight columns">
+        <ul class="menu-container">
+          <li class="menu-item"><a href="#">Consumers</a></li>
+          <li class="menu-item"><a href="#">Producers</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+          <li class="skip menu-item"><a href="mc-embedded-subscribe-form" gumby-goto="[data-target='mc-embedded-subscribe-form'] "class="medium metro btn default">&nbsp;&nbsp;Register&nbsp;&nbsp;</a></li>
         </ul>
       </div>      
     </div>
   </div>
 
+  <!--Main content container -->
 	<div class="container">
-    
-  <div class="hero-background">  
-    <div class="hero-text-area-container">
-      <h3 class="hero-text-effects">Eaters: Find Your Favorite Food Truck</h3>
-    </div>
-		<div class="iphone-backdrop">
-			<img src="images/iphone-shell.png" width="250" height="542" gumby-retina>
-			<div class="hero-image-band-container">
-      	<img src="images/ios-screenshots/04-Truck-Checkin.png" width="213" height="378" gumby-retina>
-      </div>
-		</div>
-	</div>
 
-    <div class="alternate-band image-band-container">
+		<!--Main row with logo, logotype, iphone and b/w backdrop -->
+	  <div class="hero-background">
+	  	<div class="row">
+
+	  		<div class="eight columns">
+
+	        <div class="logo">
+	          <div class="site-logo">	
+	          	<div class="site-logo-img">
+	          		<img src="images/logo-dark-orange/GT_web_logo.png" width="85" height="75" alt="Goodtruck Logo" gumby-retina /></li>
+	          	</div>
+	          	<div class="site-title">
+	          		<h1>Goodtruck</h1>
+	          	</div>
+	          </div>
+	        </div>
+	        <div class="site-intro-container">  
+	          <div class="site-intro">
+	        		<div class="site-intro-text">
+	        			Goodtruck helps eaters find their favorite food truck and keep food trucks on their radar.
+	        		</div>
+	        	</div>
+	        </div>
+	      </div> 
+	      <div class="four columns">
+					<div class="iphone-backdrop">
+						<img src="images/iphone-shell.png" width="250" height="542" gumby-retina>
+						<div class="hero-image-band-container">
+			      	<!--<img src="images/ios-screenshots/04-Truck-Checkin.png" width="213" height="378" gumby-retina>-->
+			      </div>
+					</div>
+				</div>
+			</div>
+		</div><!--close hero-background-->
+
+		<!--Email row-->
+		<div class="row">
+			<div class="centered eight columns">
+				<div class="email-text">
+					<h2>Like What You Are Seeing?</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="centered six columns">
+				<div class="email-teaser">
+					Sign up with Goodtruck and receive updates as we build the best platform for food trucks in the world!
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="centered six columns">
+				
+				<!-- Begin MailChimp Signup Form -->
+					<form action="http://goodtruck.us3.list-manage.com/subscribe/post?u=0992f88f6cb153bc1cef3f1a3&amp;id=1b8eb127b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-form" target="_blank" novalidate>				  
+						<ul>
+						  <li class="field">
+    						<input class="narrow input mailchimp-firstname" name="FNAME" id="mce-FNAME" type="text" placeholder="First Name" />
+    						<input class="wide input mailchimp-lastname" name="LNAME" id="mce-LNAME" type="text" placeholder="Last Name" />
+  						</li>
+  						<li class="field append">
+  							<input class="xwide input required mailchimp-email" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address">
+					  		<div class="medium primary btn">&nbsp;Required<sup>*</sup>&nbsp;</div>
+					  	</li>
+					  	<li class="field">
+					  		<input class="mailchimp-fauxbutton" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >
+					  	</li>
+					  	<!--Mailchimp secret sauce-->
+					  	<div style="position: absolute; left: -5000px;"><input type="text" name="b_0992f88f6cb153bc1cef3f1a3_1b8eb127b7" value=""></div>
+						</ul>
+					</form>
+
+			</div>
+		</div>
+
+
+<!--    
+			<div class="alternate-band image-band-container">
       <div class="row">
         <div class="two columns band-subimage-block"></div>
         <div class="eight columns band-mainimage-block"></div>
@@ -112,23 +160,9 @@
 		    </div>
      	</div>
     </div>
+-->
 
-		<!-- Begin MailChimp Signup Form -->
-		<div id="mc_embed_signup">
-		<form action="http://goodtruck.us3.list-manage.com/subscribe/post?u=0992f88f6cb153bc1cef3f1a3&amp;id=1b8eb127b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		  
-		<div class="mc-field-group">
-		  <label for="mce-EMAIL">Email Address</label>
-		  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-		</div>
-		  <div id="mce-responses" class="clear">
-		    <div class="response" id="mce-error-response" style="display:none"></div>
-		    <div class="response" id="mce-success-response" style="display:none"></div>
-		  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		    <div style="position: absolute; left: -5000px;"><input type="text" name="b_0992f88f6cb153bc1cef3f1a3_1b8eb127b7" value=""></div>
-		  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-		</form>
-		</div>
+
 
 </div>
 
