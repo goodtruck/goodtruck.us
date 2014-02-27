@@ -6860,27 +6860,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000318}}
-.no-touch .navbar {
+.navbar {
   background: url("../images/GT_web_bg_grid_pattern.png") repeat top left;
   top: 0;
   z-index: 3;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000324}}
-.no-touch .navbar ul.menu-container {
+.navbar ul.menu-container {
   border-spacing: 0.5em;
   margin: 0 auto;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000329}}
-.no-touch .navbar ul.menu-container li {
+.navbar ul.menu-container li {
   height: 0;
   text-transform: uppercase;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000333}}
-.no-touch .navbar ul.menu-container li .btn, .no-touch .navbar ul.menu-container li .btn:hover {
+.navbar ul.menu-container li .btn, .navbar ul.menu-container li .btn:hover {
   border: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000337}}
-.no-touch .navbar ul.menu-container li .btn.default {
+.navbar ul.menu-container li .btn.default {
   background: #fe1c10;
   border-bottom: 2px #c10a01 solid;
   color: #f7f7f2;
@@ -6888,19 +6888,19 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.6s ease;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000345}}
-.no-touch .navbar ul.menu-container li .btn.default:hover {
+.navbar ul.menu-container li .btn.default:hover {
   background: #c10a01;
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000350}}
-.no-touch .navbar ul.menu-container li > a, .no-touch .navbar ul.menu-container li a:visited {
+.navbar ul.menu-container li a, .navbar ul.menu-container li a:visited {
   color: #fe1c10;
   padding: 0em 1em;
   text-shadow: none;
   transition: border-bottom 0.5s ease, color 0.5s ease;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnserrao\/sites\/goodtruck\.us\/app\/styles\/_custom\.scss}line{font-family:\0000357}}
-.no-touch .navbar ul.menu-container li > a:hover {
+.navbar ul.menu-container li a:hover {
   background: none;
   color: #c10a01;
   border-bottom: 2px #c10a01 solid;

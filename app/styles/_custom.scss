@@ -15,7 +15,7 @@
   }
 
 // ##### Navbar ####
-  .no-touch .navbar {
+  .navbar {
     background: url('../images/GT_web_bg_grid_pattern.png') repeat top left;
     // position: fixed; - could become fixed again soon
     top: 0;
@@ -47,14 +47,14 @@
           text-decoration: none;
         }
 
-        > a, a:visited {
+        a, a:visited {
           color: $orange;
           padding: 0em 1em;
           text-shadow: none; //overrides that god-awful text-shadow on navbar li links
           transition: border-bottom 0.5s ease, color 0.5s ease;
         }
 
-        > a:hover {
+        a:hover {
           background: none;
           color: $dark-orange;
           border-bottom: 2px $dark-orange solid;

@@ -141,6 +141,7 @@ module.exports = function (grunt) {
                 sassDir: '<%= yeoman.app %>/styles',
                 imagesDir: '<%= yeoman.app %>/images',
                 javascriptsDir: '.tmp/scripts',
+                fontsDir: '<%= yeoman.app %>/fonts',
                 loadAll: '<%= yeoman.app %>/styles/extensions',
                 relativeAssets: true,
                 force: true
@@ -256,7 +257,8 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,txt}',
                         '.htaccess',
-                        'images/{,*/}*.{webp,gif}'
+                        'images/{,*/}*.{webp,gif}',
+                        'fonts/{,*/}*.*'
                     ]
                 }]
             }
