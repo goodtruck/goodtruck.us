@@ -1,6 +1,6 @@
 // ##### Global ####
   body {
-    background: url('../images/GT_web_bg_grid_pattern.png') repeat top left;
+    background: $offwhite url('../images/GT_web_bg_grid_pattern.png') repeat top left;
     color: $gray;
     font-family: $main-type-face;
   }
@@ -9,22 +9,35 @@
     font-family: $display-face, Helvetica, Arial, sans-serif;
   }
 
+  h1  {
+    font-size: $xxxxlarge;
+  }
+
   .row {
     max-width: none; //override
     width: 100%;      
   }
 
-// ##### Navbar ####
+
+// ########################################################
+// #### This is the main index.html page for Goodtruck ####
+// ########################################################
+
+// ##### Navbar on marketing index.html ####
   .navbar {
-    background: url('../images/GT_web_bg_grid_pattern.png') repeat top left;
+    background: $offwhite url('../images/GT_web_bg_grid_pattern.png') repeat top left;
     // position: fixed; - could become fixed again soon
+    height: 80px;
     top: 0;
     z-index: 3;
 
+    ul li .btn {
+      border-color: $dark-orange !important; //gumby override
+    }
+
     ul.menu-container {
       border-spacing: 0.5em;
-      margin: 0 auto;
-
+      margin: 0.5em auto;
 
       li {
         height: 0; // lets ul element make their own height
@@ -49,6 +62,7 @@
 
         a, a:visited {
           color: $orange;
+          font-size: $med;
           padding: 0em 1em;
           text-shadow: none; //overrides that god-awful text-shadow on navbar li links
           transition: border-bottom 0.5s ease, color 0.5s ease;
@@ -63,57 +77,57 @@
     }
   }
 
-// #### Band 1: Hero Mobile Area ####
+// #### Band 1: Hero Mobile Area on marketing index.html ####
 
   //bg image + container
   .hero-background {
     background: url('../images/GT_web_trucks_bwphoto.png') no-repeat bottom center;
+    background-size: 100% 25em;
     height: 100%;
-    margin-top: -2em; //overrides .navbar bottom margin which is stubborn
-    min-height: 53em;
+    margin-top: -1.5em; //offset of whatever .overlay-background is + 2em more to offset .navbar bottom margin
+    min-height: 45em;
     min-width: 100%;
 
     //for retina background images in Gumby, not sure if this works
     @include respond("min-device-pixel-ratio: 2") {
-      background: url('../images/GT_web_trucks_bwphoto@2x.png') no-repeat bottom center; 
+      background: url('../images/GT_web_trucks_bwphoto@2x.png') no-repeat bottom center fixed; 
       background-size: 1429px 538px;
     }
 
     // truck, logotype and short text - table layout
     .logo {
       display: table;
-      border-spacing: 1em;
-      margin: 3em auto 0em auto;
+      border-spacing: 1.2em;
+      margin: 1% auto 0% auto;
 
       .site-logo {
         display: table-row;
+        vertical-align: middle;
         
         .site-logo-img {
           display: table-cell;
-          height: 5em;
-          vertical-align: middle;
         }
 
         .site-title {
           display: table-cell; 
-          height: 5em;
-          vertical-align: middle;
 
           h1 {
-            font-size: $xxxlarge;
+            font-size: $xxxxxlarge;
           }
         }
       }
     }
 
     .site-intro-container {
-      margin: -1em auto 0 auto;
-      width: 30em;
+      margin: -2.8em auto 0 auto;
+      max-width: 38em; // keeps things honest for the giant screens
+      min-width: 26em; // holds to three lines as the screen shrinks
+      width: 80%;
 
       .site-intro-text {
         display: float;
-        font-size: $med;
-        line-height: $extra-line-height;
+        font-size: $large;
+        line-height: $xlarge-line-height;
         text-align: center;
       }
     }
@@ -143,7 +157,7 @@
     }
   }
 
-// #### Band 2: Email Signup ########
+// #### Band 2: Email Signup on marketing index.html ########
   .email-text {
     margin-top: 3.5em;
     
@@ -154,7 +168,8 @@
   }
 
   .email-teaser {
-    font-size: $med;
+    font-size: $large;
+    line-height: $xlarge-line-height;
     margin-bottom: 2em;
     text-align: center;
   }
@@ -173,12 +188,15 @@
 
     .field .input {
       border-radius: 0px;
+      font-size: $large;
+      padding: 25px 15px;
     }
 
     .mailchimp-fauxbutton {
       background: $orange;
       border-bottom: 2px $dark-orange solid;
       color: $offwhite;
+      font-size: $large;
       height: 2.5em;
       transition: background 0.6s ease;
       text-transform: uppercase;
@@ -190,9 +208,16 @@
     }
   }
 
+// ###########################################################
+// #### This is the splash signup.html page for Goodtruck ####
+// ###########################################################
 
+  .splash-logo {
+    margin: 6em 0em 0em 1.8em;
+  }
 
-
-
-
+  h1.splash-site-title {
+    font-size: $xxxlarge;
+    text-align: center;
+  }
 

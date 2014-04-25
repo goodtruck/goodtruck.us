@@ -43,6 +43,7 @@ $button-font-weight: $font-weight-semibold;
 $tabs-font-weight: $font-weight-semibold;
 
 // Vertical Rhythm Spacing
+$xlarge-line-height: ms(1.9) !default;
 $extra-line-height: ms(1.5) !default;
 $base-line-height: ms(1) !default;
 $rhythm-spacing: .168;
@@ -68,6 +69,7 @@ $xlarge: ms(4);
 $xxlarge: ms(5);
 $xxxlarge: ms(6);
 $xxxxlarge: ms(7);
+$xxxxxlarge: 90px; // this is inbetween 7 & 8, but you can only do integers here
 $reallybig: ms(8);
 $tremendous: ms(9);
 $absurd: ms(10);
